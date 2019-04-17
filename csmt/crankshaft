@@ -400,7 +400,7 @@ function cs_bluetooth_pairable() {
 function cs_echo() {
     PPIDCHECK=$(ps $PPID | tail -1 | awk '{print $6}')
     if [[ ! $SHLVL -gt 2 ]] && [ -z $PPIDCHECK ]; then
-	echo $1
+	#echo $1
     else
 	logger "CSMT-LOGGER: --------------------------------------------------------------------"
 	logger "CSMT-LOGGER: $1"
